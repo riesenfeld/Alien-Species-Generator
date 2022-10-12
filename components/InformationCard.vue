@@ -24,21 +24,9 @@ export default {
       default: 'white',
     },
     content: {
-      type: Object,
-      default: () => {
-        return {
-          main: { name: 'Generating...', description: '' },
-          additions: false,
-          styles: false,
-        }
-      },
+      type: [Object, Boolean],
+      default: false,
     },
-    //  additions: {
-    //    type: Object,
-    //    default: () => {
-    //      return { name: '', description: '' }
-    //    },
-    //  },
   },
 }
 </script>
