@@ -1,12 +1,6 @@
 <template>
-  <v-container>
-    <v-row
-      v-if="parentingStyleInfo"
-      justify="center"
-      align="center"
-      width="100%"
-      height="100%"
-    >
+  <v-container v-if="parentingStyleInfo">
+    <v-row justify="center" align="center" width="100%" height="100%">
       <v-col cols="12" sm="6" md="6">
         <InformationCard
           color="red"
@@ -22,15 +16,16 @@
         <InformationCard color="blue" :content="dietInfo"></InformationCard>
       </v-col>
     </v-row>
-    <div v-else id="loading-message">
-      <v-progress-circular
-        indeterminate
-        size="100"
-        width="10"
-      ></v-progress-circular>
-      <h2>Generating...</h2>
-    </div>
+    <v-btn @click="generate">Generate</v-btn>
   </v-container>
+  <div v-else id="loading-message">
+    <v-progress-circular
+      indeterminate
+      size="100"
+      width="10"
+    ></v-progress-circular>
+    <h2>Generating...</h2>
+  </div>
 </template>
 
 <script>
