@@ -1,34 +1,36 @@
 <template>
-  <v-row
-    v-if="parentingStyleInfo"
-    justify="center"
-    align="center"
-    width="100%"
-    height="100%"
-  >
-    <v-col cols="12" sm="6" md="6">
-      <InformationCard
-        color="red"
-        :content="parentingStyleInfo"
-      ></InformationCard>
-      <InformationCard
-        color="yellow"
-        :content="reproductionInfo"
-      ></InformationCard>
-    </v-col>
-    <v-col cols="12" sm="6" md="6">
-      <InformationCard color="green" :content="anatomyInfo"></InformationCard>
-      <InformationCard color="blue" :content="dietInfo"></InformationCard>
-    </v-col>
-  </v-row>
-  <div v-else id="loading-message">
-    <v-progress-circular
-      indeterminate
-      size="100"
-      width="10"
-    ></v-progress-circular>
-    <h2>Generating...</h2>
-  </div>
+  <v-container>
+    <v-row
+      v-if="parentingStyleInfo"
+      justify="center"
+      align="center"
+      width="100%"
+      height="100%"
+    >
+      <v-col cols="12" sm="6" md="6">
+        <InformationCard
+          color="red"
+          :content="parentingStyleInfo"
+        ></InformationCard>
+        <InformationCard
+          color="yellow"
+          :content="reproductionInfo"
+        ></InformationCard>
+      </v-col>
+      <v-col cols="12" sm="6" md="6">
+        <InformationCard color="green" :content="anatomyInfo"></InformationCard>
+        <InformationCard color="blue" :content="dietInfo"></InformationCard>
+      </v-col>
+    </v-row>
+    <div v-else id="loading-message">
+      <v-progress-circular
+        indeterminate
+        size="100"
+        width="10"
+      ></v-progress-circular>
+      <h2>Generating...</h2>
+    </div>
+  </v-container>
 </template>
 
 <script>
@@ -47,10 +49,8 @@ export default {
       dietInfo: false,
     }
   },
-  created() {
-    if (process.client) {
-      this.generate()
-    }
+  beforeMount() {
+    this.generate()
   },
   methods: {
     pickRandomParentingStyle() {

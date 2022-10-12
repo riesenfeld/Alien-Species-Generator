@@ -4,49 +4,49 @@
       "id": 0,
       "name": "Parent Sacrificed",
       "description": "Their offspring survive because their parents die -- a terrible byproduct of the birthing process for these aliens. These parents may have forgone food to care for their young. Maybe they give their offspring food and shelter with their own bodies. In any case, these parents make the ultimate sacrifice for their children and will not see them mature.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 1,
       "name": "Absent Parents",
       "description": "Their offspring are born into the world without any natural caretakers. Individuals of the species survive all on their own from birth.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 2,
       "name": "Pouches",
       "description": "These aliens have pouches or specially made adaptations to protect and carry their young. This might foster an intense, individualized bond between caretaker and child. As this species grows, the children will leave the proverbial nest.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 3,
       "name": "Raised by Parents",
       "description": "This species as parents stay close to their offspring and provide food, shelter and other necessities. The parents are the primary caretakers. They stick around at least until their children have matured. These family ties may last lifetimes.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 4,
       "name": "Unrelated Species",
       "description": "Their offspring are raised by unrelated guardians or even an entirely different species. This could involve anything from trickery to a mutualist relationship. However, this process is typically hardwired in alien biology, and isn't a mere social contract.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 5,
       "name": "Communal",
       "description": "Their offspring are raised by a whole community. Responsibility for rearing the young are not solely or even primarily placed on the individual parents. Instead, these aliens help ensure the safety of all their offspring by collectively working together.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 6,
       "name": "Competitive",
       "description": "These offspring are born competing with their own family. Whether it's fending off their siblings or saving themselves from their parents, these offspring must survive attacks from their family members if they are to make it to adulthood.",
-      "trait_rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 7,
       "name": "Instant Consciousness",
       "description": "Their offspring are born with amazing cognitive abilities or can mostly function in their society right away. They might be surprisingly conscious, or at the very least they can learn new things in a short amount of time.",
-      "trait_rarity": 0.04
+      "rarity_class": "EXTRAORDINARY"
     }
   ],
 
@@ -55,61 +55,61 @@
       "id": 0,
       "name": "Asexual",
       "description": "They reproduce asexually. Individuals can produce offspring all on their own without the need of any partner. Genetic mutations still occur to allow for adaptive evolution.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 1,
       "name": "Intimate Contact",
       "description": "They reproduce through intimate sexual contact, requiring genetic material from at least one more partner. One of the partners probably carries a fertilized egg to term.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 2,
       "name": "No-contact Fertilization",
       "description": "They reproduce through no-contact fertilization. This could be something like releasing spores into the air, or leaving eggs somewhere to be fertilized by another individual later. Genetic material is released and exchanged without touch.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 3,
       "name": "Requires Other Species",
       "description": "They reproduce in a specially evolved way that requires a member of another species. This could include intercouse with other aliens or it could be a parasitic process. It could even be something as rare as genetically rewriting other species to transform them into new alien members. In any case, they rely on another species to reproduce or birth their offspring.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 4,
-      "name": "Simple Touch [Rare]",
+      "name": "Simple Touch",
       "description": "They reproduce by simple touch. Even a handshake can have enough genetic material for this species to repopulate. This could have wider social implications.",
-      "trait_rarity": 0.04
+      "rarity_class": "RARE"
     },
     {
       "id": 5,
       "name": "Eusocial",
       "description": "They reproduce as part of a eusocial order. They have a small number of breeding members that pass along DNA. The rest are sterile and lack genetic diversity, but are still vital to the survival of the whole species in various other roles.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 6,
       "name": "Psychic Sex",
       "description": "They reproduce using telepathy. Genes are passed on - or fertilization occurs - through a mind meld, transcending the physicality of sex.",
-      "trait_rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 7,
       "name": "Cloning",
       "description": "They reproduce using cloning technologies. Something may have happened to make this species sterile, or there may be socially enforced restrictions on the reproduction. Either way, offspring are an exact copy of the \"parents\".",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 8,
       "name": "Abiogenesis [Extremely Rare]",
       "description": "They reproduce through abiogenesis: creating life out of non-living matter. The exact process is arcane and kept secret, but these products are clearly lifeforms and have consciousness. This is similar to but different from a robotic Artificial Intelligence",
-      "trait_rarity": 0.025
+      "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 9,
       "name": "Spontaneous Existence [As Rare as Possible]",
       "description": "Referred to as Quantum or Spontaneous Reproduction, these aliens simply appear out of nowhere and just exist. There are no genitalia of any kind, and no sexual or asexual processes happen. While they share much of the same DNA between each other, there are no natural ways for them to exchange genes, pass them on or procreate. How they just \"pop\" into existence is unknown, but just as undeniable.",
-      "trait_rarity": 0.02
+      "rarity_class": "EXTRAORDINARY"
     }
   ],
 
@@ -118,25 +118,25 @@
       "id": 0,
       "name": "Sexual Competition [Infrequent]",
       "description": "They have also evolved under intense sexual competition. They may use elegant displays, have complicated courtships or have adapted body parts to attract potential mates.",
-      "rarity": 0.4
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 1,
       "name": "Sexual Transformation [Infrequent]",
       "description": "These aliens can also change sexes at will, or their sexes are interchangeable depending on environmental pressures.",
-      "rarity": 0.4
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 2,
       "name": "Conditional Reproduction [Rare]",
       "description": "They reproduce only under specific conditions or locations. Maybe there needs to be a certain temperature, or moisture level. Whatever it is, those conditions must be met before reproduction and incubation can even begin.",
-      "rarity": 0.15
+      "rarity_class": "RARE"
     },
     {
       "id": 3,
       "name": "Regenerative Reproduction [Very Rare]",
       "description": "They can also sometimes reproduce through Regeneration. If they are non-fatally dismembered in specific ways, the cut-off parts can grow into a new individual. Wounds heal and limbs grow back on the original alien.",
-      "rarity": 0.05
+      "rarity_class": "EXTRAORDINARY"
     }
   ],
 
@@ -145,67 +145,67 @@
       "id": 0,
       "name": "Aquatic",
       "description": "This alien lives in a liquid environment and can breathe underwater. It can also swim comfortably. This alien has adapted to certain amounts of atmospheric pressure.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 1,
       "name": "Molluscan",
       "description": "This alien is squishy and slimy. It probably lacks a spine, but it might make up for that with a shell. Mollusks are vulnerable but also thrive in a variety of environments.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 2,
       "name": "Extremophile",
       "description": "This alien thrives in hostile conditions where little else can survive. These conditions can range from toxic environments to space itself.",
-      "trait_rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 3,
       "name": "Exotic",
       "description": "This creature is made up of unsual matter such as a gas, plasma or liquid.",
-      "trait_rarity": 1
+      "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 4,
       "name": "Arthropod or Insectoid",
       "description": "This alien sports a hard exoskeleton or chitonous armor. It has multiple limbs and most resembles an insect, spider or arthropod.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 5,
       "name": "Avian",
       "description": "it is at least partially feathered and has wings.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
       "name": "Reptilian",
       "description": "it is cold blooded and is at least partially covered in scales. It might also shed its skin.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 7,
       "name": "Mammalian",
       "description": "This alien is furry and probably warm-blooded. Live birth is common and they have mammary glands.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 8,
       "name": "Arboreal",
       "description": "This alien thrives in the tall trees and canopies of jungles.",
-      "trait_rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 9,
       "name": "Botanical",
       "description": "This alien is made up of matter such as stems, flowers and wood.",
-      "trait_rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 10,
       "name": "Fungal",
       "description": "This alien is made up of mycelium, molds or yeast.",
-      "trait_rarity": 1
+      "rarity_class": "RARE"
     }
   ],
 
@@ -214,49 +214,55 @@
       "id": 0,
       "name": "Mimicry",
       "description": "This alien has evolved to mimic the appearance of another species or plant, for safety or successful hunting.",
-      "rarity": 1
+      "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 1,
       "name": "Stealth",
       "description": "This alien has evolved very good camouflage to conceal itself, and it might even turn invisible.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 2,
       "name": "Aposematism",
       "description": "This alien has evolved to display itself very openly as a warning for potential predators. This warning can come in the form of bright colors, loud sounds, strong smells, etc.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 3,
-      "name": "Exoskeleton (do not roll for 5)",
+      "name": "Exoskeleton",
       "description": "This alien has an exoskeleton. This  can cover a part of the body or the whole animal. It may have to moult over the course of its lifetime.",
-      "rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 4,
       "name": "Wings (do not roll for 6)",
       "description": "This alien has wings of some kind and is able to fly or glide.",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 5,
       "name": "Tentacles (do not roll for 2)",
       "description": "This alien has sensitive and flexible tentacles that can sense, grab or attack other animals.",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
       "name": "Proboscis",
       "description": "This alien has a long, tube-like appendage from its mouth area. It can be used to handle objects, consume food directly, or simply be a sensitive organ.",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 7,
       "name": "Metamorphosis",
       "description": "This alien creature has multiple life stages. It completely transforms its looks and functions between these stages. This process is likely protected by cocooning or the alien developes inside a chrysalis.",
-      "rarity": 1
+      "rarity_class": "RARE"
+    },
+    {
+      "id": 8,
+      "name": "Molting or Shedding",
+      "description": "TBD TBD",
+      "rarity_class": "COMMON"
     }
   ],
 
@@ -265,77 +271,77 @@
       "id": 0,
       "name": "Photosynthesis",
       "description": "This alien transforms light energy into a sort of food source through Photosynthesis.",
-      "rarity": 1,
+      "rarity_class": "RARE",
       "styles": []
     },
     {
       "id": 1,
       "name": "Minerals",
       "description": "This alien consumes minerals, and their diet could include rocks and crystals (or creatures made out of minerals).",
-      "rarity": 1,
+      "rarity_class": "UNCOMMON",
       "styles": [0, 1, 3]
     },
     {
       "id": 2,
       "name": "Exotic",
       "description": "This alien consumes strange \"foods\" such as gases, plastics or even electricty.",
-      "rarity": 1,
+      "rarity_class": "RARE",
       "styles": []
     },
     {
       "id": 3,
       "name": "Psychic/Energy",
       "description": "This alien consumes psychic or emotional energy for sustenance.",
-      "rarity": 1,
+      "rarity_class": "EXTRAORDINARY",
       "styles": []
     },
     {
       "id": 4,
       "name": "Waste",
       "description": "This alien consumes the waste of other species, or otherwise cleans up the environment and other animals as part of its diet.",
-      "rarity": 1,
+      "rarity_class": "UNCOMMON",
       "styles": []
     },
     {
       "id": 5,
       "name": "Decaying matter",
       "description": "This alien consumes decaying matter such as dead animals or rotted wood.",
-      "rarity": 1,
+      "rarity_class": "UNCOMMON",
       "styles": []
     },
     {
       "id": 6,
       "name": "Fluids",
       "description": "This alien consumes fluids such as nectar, sap or blood (or an animal made out of fluids).",
-      "rarity": 1,
+      "rarity_class": "COMMON",
       "styles": []
     },
     {
       "id": 7,
       "name": "Parasitic",
       "description": "This alien feeds off another organism in a parasitic fashion. It syphon off any one kind of substance or energy from its host.",
-      "rarity": 1,
+      "rarity_class": "UNCOMMON",
       "styles": []
     },
     {
       "id": 8,
       "name": "Herbivore",
       "description": "This alien eats plant matter or wood. Or an animal made out of this matter.",
-      "rarity": 1,
+      "rarity_class": "COMMON",
       "styles": []
     },
     {
       "id": 9,
       "name": "Carnivore",
       "description": "This alien eats other animals and gets its energy from digesting live, organic matter.",
-      "rarity": 1,
+      "rarity_class": "COMMON",
       "styles": []
     },
     {
       "id": 10,
       "name": "Omnivore",
       "description": "This alien consumes a large variety of matter that can range from plants to animals or other matter.",
-      "rarity": 1,
+      "rarity_class": "COMMON",
       "styles": []
     }
   ],
@@ -345,115 +351,115 @@
       "id": 0,
       "name": "Ambushing",
       "description": "Hiding and ambushing. ☆ (4, 9-11)",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 1,
       "name": "Going solo",
       "description": "Foraging or hunting on their own.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 2,
       "name": "Hunting with Pack",
       "description": "hunting in packs (4, 10 and 11)",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 3,
       "name": "Grazing with Herd",
       "description": "grazing in a herd ■ (2, 3, 5, 6 and 9)",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 4,
       "name": "Cooking",
       "description": "cooking their food to a certain temperature ■ ☆",
-      "rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 5,
       "name": "Swallows whole",
       "description": "swallowing their food whole",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
-      "name": "Chews [keep low for interest]",
+      "name": "Chews",
       "description": "chewing their food",
-      "rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 7,
       "name": "Sucks nutrition out",
       "description": "sucking out the nutrients inside an organism. ■ ☆",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 8,
       "name": "Sucks food in",
       "description": "sucking food into their mouth from a distance with great force. ■",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 9,
       "name": "Expels acid",
       "description": "expelling their stomach acids out onto their food to digest it before eating.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 10,
       "name": "Roots",
       "description": "putting down a kind of root that transfers nutrients to the alien. ■ ☆",
-      "rarity": 1
+      "rarity_class": "RARE"
     },
     {
       "id": 11,
       "name": "Steals",
       "description": "stealing food from another creature. This isn't mere desperation, but rather a distinct technique developed during evolution. ■ ☆",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 12,
       "name": "Injection",
       "description": "injecting its food with compounds that digest it, paralyze it, poison it, etc. ☆",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 13,
       "name": "Scavenging [more weight on this style]",
       "description": "scavenging: essentially waiting for a predator to finish eating its prey, and then picking up where they left off, eating the parts that others can't. They evolved to gain nutrition from eating decomposing matter and are not affect by diseases from eating it.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 14,
       "name": "Gastrolith",
       "description": "swallowing rocks or similar objects to help break food down in their stomachs.",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 15,
       "name": "Tearing, Ripping or Breaking apart",
       "description": "tearing, ripping or otherwise breaking their food apart.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 16,
       "name": "Traps/catches",
       "description": "trapping their food, or otherwise using a sticky body part that specializes in catching food.",
-      "rarity": 1
+      "rarity_class": "COMMON"
     },
     {
       "id": 17,
       "name": "Absorbs",
       "description": "absorbing nutrients through their skin (or skin-equivalent). Like a kind of osmosis. ■ ☆",
-      "rarity": 1
+      "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 18,
       "name": "Paralyzes",
       "description": "paralyzing its prey, or shuts down certain functions and organs through toxins or sounds, etc. ☆",
-      "rarity": 1
+      "rarity_class": "UNCOMMON"
     }
   ],
 
@@ -462,25 +468,25 @@
       "id": 0,
       "name": "Cannibalism",
       "description": "This species might also engage in cannibalism when pressured to.",
-      "rarity": "1/10"
+      "rarity_class": "1/10"
     },
     {
       "id": 1,
       "name": "Storage",
       "description": "This species will also store extra food in a space within their body or hide it someplace safe to find later.",
-      "rarity": "3/10"
+      "rarity_class": "3/10"
     },
     {
       "id": 2,
       "name": "Needs food badly",
       "description": "This animal also requires so much energy that it must eat more than it weighs multiple times a day. This animal also has a fast metabolism.",
-      "rarity": "3/10"
+      "rarity_class": "3/10"
     },
     {
       "id": 3,
       "name": "Slow metabolism",
       "description": "This animal also does not need to eat frequently. It has a slow metabolism, and while it can survive long periods without food, it is also slower or must carefully conserve its energy.",
-      "rarity": "3/10"
+      "rarity_class": "3/10"
     }
   ]
 }
