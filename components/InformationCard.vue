@@ -32,13 +32,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#info-card {
+@font-face {
+  font-family: Finlandica;
+  src: url('@/assets/fonts/Finlandica-Regular.ttf') format('truetype');
+}
+.info-card {
   //   color: white;
-  //   filter: invert(100%);
+  //   filter: invert(100%`);
   //   mix-blend-mode: difference;
+  // font-family: 'Finlandica', sans-serif;
+  // font-family: 'Courier New', Courier, monospace;
+  width: min(80vw, 760px);
 }
 .info-card section {
   //   mix-blend-mode: difference;
   color: #bbb;
 }
+
+// * {
+//   font-family: Finlandica;
+// }
 </style>

@@ -1,7 +1,22 @@
 <template>
   <v-container v-if="parentingStyleInfo">
-    <v-row justify="center" align="center" width="100%" height="100%">
-      <v-col cols="12" sm="6" md="6">
+    <span>
+      <v-btn color="primary" class="btn" @click="generate">Generate</v-btn>
+      <span>
+        <v-btn
+          :color="clipboardStatus < 1 ? 'primary' : 'success'"
+          class="btn"
+          @click="copyLinkToClipboard"
+        >
+          {{ clipboardStatusOptions[clipboardStatus] }}
+          &nbsp;<v-icon>mdi-clipboard</v-icon></v-btn
+        >
+      </span>
+      <v-btn class="btn">Save as PDF</v-btn>
+      <v-text-field label="Name this species"></v-text-field>
+    </span>
+    <v-row justify="center" align="center">
+      <v-col cols="12" sm="12" md="12" align="center">
         <InformationCard
           background-color="#200"
           :content="parentingStyleInfo"
@@ -10,8 +25,8 @@
           background-color="#220"
           :content="reproductionInfo"
         ></InformationCard>
-      </v-col>
-      <v-col cols="12" sm="6" md="6">
+        <!-- </v-col> -->
+        <!-- <v-col cols="12" sm="6" md="6"> -->
         <InformationCard
           background-color="#020"
           :content="anatomyInfo"
@@ -22,20 +37,6 @@
         ></InformationCard>
       </v-col>
     </v-row>
-    <span>
-      <v-btn color="primary" @click="generate">Generate</v-btn>
-      <span>
-        <v-btn
-          :color="clipboardStatus < 1 ? 'primary' : 'success'"
-          @click="copyLinkToClipboard"
-        >
-          {{ clipboardStatusOptions[clipboardStatus] }}
-          &nbsp;<v-icon>mdi-clipboard</v-icon></v-btn
-        >
-      </span>
-      <v-btn>Save as PDF</v-btn>
-      <v-text-field label="Name this species"></v-text-field>
-    </span>
   </v-container>
   <div v-else id="loading-message">
     <v-progress-circular
@@ -48,12 +49,14 @@
 </template>
 
 <script>
+import { saveAsPDFMixin } from '../mixins/saveAsPDFMixin.js'
 import InformationCard from '@/components/InformationCard.vue'
 import speciesDataJSON from '@/data/species_data.json'
 
 export default {
   name: 'IndexPage',
   components: { InformationCard },
+  mixins: [saveAsPDFMixin],
   data() {
     return {
       speciesData: speciesDataJSON,
@@ -213,6 +216,15 @@ export default {
         }
         /* Make sure we don't index OOB */
         if (this.$route.query[keys[i]] >= lengths[keys[i]]) {
+          return false
+        }
+        if (
+          this.$route.query.a < 0 ||
+          this.$route.query.d < 0 ||
+          this.$route.query.ds < 0 ||
+          this.$route.query.p < 0 ||
+          this.$route.query.r < 0
+        ) {
           return false
         }
       }

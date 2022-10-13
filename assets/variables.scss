@@ -2,3 +2,8 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+@font-face {
+  font-family: Finlandica;
+  src: url('@/assets/fonts/Finlandica-VariableFont_wght.ttf') format('truetype');
+}
