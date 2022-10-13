@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Parent Sacrificed",
-      "description": "Their offspring survive because their parents die -- a terrible byproduct of the birthing process for these aliens. These parents may have forgone food to care for their young. Maybe they give their offspring food and shelter with their own bodies. In any case, these parents make the ultimate sacrifice for their children and will not see them mature.",
+      "description": "Their offspring survive because their parents die—a terrible byproduct of the birthing process for these aliens. These parents may have forgone food to care for their young. Maybe they give their offspring food and shelter with their own bodies. In any case, these parents make the ultimate sacrifice for their children and will not see them mature.",
       "rarity_class": "COMMON"
     },
     {
@@ -101,13 +101,13 @@
     },
     {
       "id": 8,
-      "name": "Abiogenesis [Extremely Rare]",
+      "name": "Abiogenesis",
       "description": "They reproduce through abiogenesis: creating life out of non-living matter. The exact process is arcane and kept secret, but these products are clearly lifeforms and have consciousness. This is similar to but different from a robotic Artificial Intelligence",
       "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 9,
-      "name": "Spontaneous Existence [As Rare as Possible]",
+      "name": "Spontaneous Existence",
       "description": "Referred to as Quantum or Spontaneous Reproduction, these aliens simply appear out of nowhere and just exist. There are no genitalia of any kind, and no sexual or asexual processes happen. While they share much of the same DNA between each other, there are no natural ways for them to exchange genes, pass them on or procreate. How they just \"pop\" into existence is unknown, but just as undeniable.",
       "rarity_class": "EXTRAORDINARY"
     }
@@ -116,25 +116,25 @@
   "REPRODUCTION_ADDITIONS": [
     {
       "id": 0,
-      "name": "Sexual Competition [Infrequent]",
+      "name": "Sexual Competition",
       "description": "They have also evolved under intense sexual competition. They may use elegant displays, have complicated courtships or have adapted body parts to attract potential mates.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 1,
-      "name": "Sexual Transformation [Infrequent]",
+      "name": "Sexual Transformation",
       "description": "These aliens can also change sexes at will, or their sexes are interchangeable depending on environmental pressures.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 2,
-      "name": "Conditional Reproduction [Rare]",
+      "name": "Conditional Reproduction",
       "description": "They reproduce only under specific conditions or locations. Maybe there needs to be a certain temperature, or moisture level. Whatever it is, those conditions must be met before reproduction and incubation can even begin.",
       "rarity_class": "RARE"
     },
     {
       "id": 3,
-      "name": "Regenerative Reproduction [Very Rare]",
+      "name": "Regenerative Reproduction",
       "description": "They can also sometimes reproduce through Regeneration. If they are non-fatally dismembered in specific ways, the cut-off parts can grow into a new individual. Wounds heal and limbs grow back on the original alien.",
       "rarity_class": "EXTRAORDINARY"
     }
@@ -261,7 +261,7 @@
     {
       "id": 8,
       "name": "Molting or Shedding",
-      "description": "TBD TBD",
+      "description": "This species has evolved to shed the outer layer of its body. This may be in response to external stimuli, such as a change in season, or in the case of an exoskeleton, to grow a stronger or better-fitting outer layer. An individual of this species may be more vulnerable during this process.",
       "rarity_class": "COMMON"
     }
   ],
@@ -271,78 +271,67 @@
       "id": 0,
       "name": "Photosynthesis",
       "description": "This alien transforms light energy into a sort of food source through Photosynthesis.",
-      "rarity_class": "RARE",
-      "styles": []
+      "rarity_class": "RARE"
     },
     {
       "id": 1,
       "name": "Minerals",
       "description": "This alien consumes minerals, and their diet could include rocks and crystals (or creatures made out of minerals).",
-      "rarity_class": "UNCOMMON",
-      "styles": [0, 1, 3]
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 2,
       "name": "Exotic",
       "description": "This alien consumes strange \"foods\" such as gases, plastics or even electricty.",
-      "rarity_class": "RARE",
-      "styles": []
+      "rarity_class": "RARE"
     },
     {
       "id": 3,
       "name": "Psychic/Energy",
       "description": "This alien consumes psychic or emotional energy for sustenance.",
-      "rarity_class": "EXTRAORDINARY",
-      "styles": []
+      "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 4,
       "name": "Waste",
       "description": "This alien consumes the waste of other species, or otherwise cleans up the environment and other animals as part of its diet.",
-      "rarity_class": "UNCOMMON",
-      "styles": []
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 5,
       "name": "Decaying matter",
       "description": "This alien consumes decaying matter such as dead animals or rotted wood.",
-      "rarity_class": "UNCOMMON",
-      "styles": []
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
       "name": "Fluids",
       "description": "This alien consumes fluids such as nectar, sap or blood (or an animal made out of fluids).",
-      "rarity_class": "COMMON",
-      "styles": []
+      "rarity_class": "COMMON"
     },
     {
       "id": 7,
       "name": "Parasitic",
       "description": "This alien feeds off another organism in a parasitic fashion. It syphon off any one kind of substance or energy from its host.",
-      "rarity_class": "UNCOMMON",
-      "styles": []
+      "rarity_class": "UNCOMMON"
     },
     {
       "id": 8,
       "name": "Herbivore",
       "description": "This alien eats plant matter or wood. Or an animal made out of this matter.",
-      "rarity_class": "COMMON",
-      "styles": []
+      "rarity_class": "COMMON"
     },
     {
       "id": 9,
       "name": "Carnivore",
       "description": "This alien eats other animals and gets its energy from digesting live, organic matter.",
-      "rarity_class": "COMMON",
-      "styles": []
+      "rarity_class": "COMMON"
     },
     {
       "id": 10,
       "name": "Omnivore",
       "description": "This alien consumes a large variety of matter that can range from plants to animals or other matter.",
-      "rarity_class": "COMMON",
-      "styles": []
+      "rarity_class": "COMMON"
     }
   ],
 
@@ -427,7 +416,7 @@
     },
     {
       "id": 13,
-      "name": "Scavenging [more weight on this style]",
+      "name": "Scavenging",
       "description": "scavenging: essentially waiting for a predator to finish eating its prey, and then picking up where they left off, eating the parts that others can't. They evolved to gain nutrition from eating decomposing matter and are not affect by diseases from eating it.",
       "rarity_class": "COMMON"
     },
@@ -468,25 +457,25 @@
       "id": 0,
       "name": "Cannibalism",
       "description": "This species might also engage in cannibalism when pressured to.",
-      "rarity_class": "1/10"
+      "rarity_class": "RARE"
     },
     {
       "id": 1,
       "name": "Storage",
       "description": "This species will also store extra food in a space within their body or hide it someplace safe to find later.",
-      "rarity_class": "3/10"
+      "rarity_class": "RARE"
     },
     {
       "id": 2,
       "name": "Needs food badly",
       "description": "This animal also requires so much energy that it must eat more than it weighs multiple times a day. This animal also has a fast metabolism.",
-      "rarity_class": "3/10"
+      "rarity_class": "RARE"
     },
     {
       "id": 3,
       "name": "Slow metabolism",
       "description": "This animal also does not need to eat frequently. It has a slow metabolism, and while it can survive long periods without food, it is also slower or must carefully conserve its energy.",
-      "rarity_class": "3/10"
+      "rarity_class": "EXTRAORDINARY"
     }
   ]
 }
