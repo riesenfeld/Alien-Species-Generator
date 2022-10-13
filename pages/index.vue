@@ -12,7 +12,7 @@
           &nbsp;<v-icon>mdi-clipboard</v-icon></v-btn
         >
       </span>
-      <v-btn class="btn">Save as PDF</v-btn>
+      <v-btn class="btn" @click="handlePDF">Save as PDF</v-btn>
       <v-text-field label="Name this species"></v-text-field>
     </span>
     <v-row justify="center" align="center">
@@ -263,12 +263,9 @@ export default {
       }
       this.clipboardStatus = 0
     },
-    // readQueryParams() {
-    //   if (this.validateQueryParams()) {
-    //     this.setDataByQueryParams()
-    //     return true
-    //   } else return false
-    // },
+    handlePDF() {
+      this.saveAsPDF()
+    },
   },
 }
 </script>
