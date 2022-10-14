@@ -38,7 +38,6 @@ export const saveAsPDFMixin = {
       const headingMarginLeft = 3
       const textMarginLeft = 6
 
-      // addFont(doc)
       // doc.setDrawColor(0)
       doc.setFont('Finlandica-Bold')
       doc.setFontSize(24)
@@ -71,27 +70,9 @@ export const saveAsPDFMixin = {
           { baseline: 'top' }
         )
         topStart += rectHeight
-        console.log(doc.splitTextToSize(trait.main.description))
-        //     doc.text(trait.main.name, 10, top)
-        //     top += 5
-        //     doc.text(trait.main.description, 10, top)
-        //     top += 5
-        //     if (trait.additions) {
-        //       doc.text(trait.styles.name, 10, top)
-        //       top += 5
-        //       doc.text(trait.styles.description, 10, top)
-        //       top += 5
-        //     }
-        //     if (trait.additions) {
-        //       doc.text(trait.additions.name, 10, top)
-        //       top += 5
-        //       doc.text(trait.additions.description, 10, top)
-        //       top += 5
-        //     }
-        //     top += 10
       })
     },
-    saveAsPDF(traits, htmlElement) {
+    saveAsPDF(traits) {
       // eslint-disable-next-line new-cap
       const doc = new jsPDF({ unit: 'pt' })
       this.addFont(doc)

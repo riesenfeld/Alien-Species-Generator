@@ -264,16 +264,12 @@ export default {
       this.clipboardStatus = 0
     },
     handlePDF() {
-      this.saveAsPDF(
-        [
-          this.parentingStyleInfo,
-          this.reproductionInfo,
-          this.anatomyInfo,
-          this.dietInfo,
-        ],
-        this.$refs.cards
-      )
-      // this.saveAsPDF()
+      this.saveAsPDF([
+        this.parentingStyleInfo,
+        this.reproductionInfo,
+        this.anatomyInfo,
+        this.dietInfo,
+      ])
     },
   },
 }
