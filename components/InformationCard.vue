@@ -43,6 +43,8 @@ export default {
   // font-family: 'Finlandica', sans-serif;
   // font-family: 'Courier New', Courier, monospace;
   width: min(80vw, 760px);
+  padding: 10px;
+  text-align: left;
 }
 .info-card section {
   //   mix-blend-mode: difference;
