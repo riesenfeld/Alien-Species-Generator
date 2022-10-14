@@ -1,25 +1,28 @@
 import { jsPDF } from 'jspdf'
+import { finlandicaRegular } from '../assets/jsPDFFontDefinitions/Finlandica-Regular.js'
+import { finlandicaBold } from '../assets/jsPDFFontDefinitions/Finlandica-Bold.js'
 
 export const saveAsPDFMixin = {
   created() {
     console.log('Hello from the mixin!')
   },
   methods: {
-    // fromHTML(doc, parentElement) {
-    //   // We'll make our own renderer to skip this editor
-    //   const specialElementHandlers = {
-    //     '#editor'(element, renderer) {
-    //       return true
-    //     },
-    //   }
+    /**
+     * Font files generated from: https://peckconsulting.s3.amazonaws.com/fontconverter/fontconverter.html
+     * Referencing this tutorial: https://www.devlinpeck.com/tutorials/jspdf-custom-font
+     */
 
-    //   // All units are in the set measurement for the document
-    //   // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
-    //   doc.fromHTML(parentElement, 15, 15, {
-    //     width: 170,
-    //     elementHandlers: specialElementHandlers,
-    //   })
-    // },
+    addFont(jsPDFInstance) {
+      jsPDFInstance.addFileToVFS('Finlandica-Bold.ttf', finlandicaBold)
+      jsPDFInstance.addFont('Finlandica-Bold.ttf', 'Finlandica-Bold', 'normal')
+
+      jsPDFInstance.addFileToVFS('Finlandica-Regular.ttf', finlandicaRegular)
+      jsPDFInstance.addFont(
+        'Finlandica-Regular.ttf',
+        'Finlandica-Regular',
+        'normal'
+      )
+    },
     drawPDF(doc, traits) {
       /* Size of an A4 page in pts */
       const pageWidth = 595.23809
@@ -37,14 +40,14 @@ export const saveAsPDFMixin = {
 
       // addFont(doc)
       // doc.setDrawColor(0)
-      // doc.setFont("Finlandica-Bold")
-      doc.setFontSize(12)
+      doc.setFont('Finlandica-Bold')
+      doc.setFontSize(24)
       // doc.text(speciesName, leftStart, topStart)
       doc.text('Alien Name', leftStart, topStart)
       topStart += 30
 
       traits.forEach((trait) => {
-        //     doc.setFont("Finlandica-Bold")
+        doc.setFont('Finlandica-Bold')
         // doc.setFillColor(colors[i][0], colors[i][1], colors[i][2])
         // doc.rect(leftStart, topStart, rectWidth, rectHeight, "F")
         doc.setFontSize(headingHeight)
@@ -56,7 +59,7 @@ export const saveAsPDFMixin = {
         )
         const textStart =
           topStart + headingHeight + headingMarginTop + headingMarginBottom
-        // doc.setFont("Finlandica-Regular")
+        doc.setFont('Finlandica-Regular')
         doc.setFontSize(textHeight)
         doc.text(
           doc.splitTextToSize(
@@ -91,20 +94,8 @@ export const saveAsPDFMixin = {
     saveAsPDF(traits, htmlElement) {
       // eslint-disable-next-line new-cap
       const doc = new jsPDF({ unit: 'pt' })
+      this.addFont(doc)
       this.drawPDF(doc, traits)
-      // this.fromHTML(doc, htmlElement)
-
-      // doc.html(htmlElement, {
-      //   callback: (doc) => {
-      //     doc.save('doodledoo' + Math.floor(Math.random() * 1000))
-      //   },
-      //   jsPDF: doc,
-      //   filename: 'YourGeneratedAlienSpecies.pdf',
-      //   width: 10,
-      //   windowWidth: 30,
-      //   x: 5,
-      //   y: 5,
-      // })
       doc.save('a4.pdf')
     },
   },
