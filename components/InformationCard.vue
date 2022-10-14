@@ -37,21 +37,11 @@ export default {
   src: url('@/assets/fonts/Finlandica-Regular.ttf') format('truetype');
 }
 .info-card {
-  //   color: white;
-  //   filter: invert(100%`);
-  //   mix-blend-mode: difference;
-  // font-family: 'Finlandica', sans-serif;
-  // font-family: 'Courier New', Courier, monospace;
   width: min(80vw, 760px);
   padding: 10px;
   text-align: left;
 }
 .info-card section {
-  //   mix-blend-mode: difference;
   color: #bbb;
 }
-
-// * {
-//   font-family: Finlandica;
-// }
 </style>
