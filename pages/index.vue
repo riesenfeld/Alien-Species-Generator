@@ -15,7 +15,7 @@
       <v-btn class="btn" @click="handlePDF">Save as PDF</v-btn>
       <v-text-field label="Name this species"></v-text-field>
     </span>
-    <v-row justify="center" align="center">
+    <v-row ref="cards" justify="center" align="center">
       <v-col cols="12" sm="12" md="12" align="center">
         <InformationCard
           background-color="#200"
@@ -264,7 +264,16 @@ export default {
       this.clipboardStatus = 0
     },
     handlePDF() {
-      this.saveAsPDF()
+      this.saveAsPDF(
+        [
+          this.parentingStyleInfo,
+          this.reproductionInfo,
+          this.anatomyInfo,
+          this.dietInfo,
+        ],
+        this.$refs.cards
+      )
+      // this.saveAsPDF()
     },
   },
 }
