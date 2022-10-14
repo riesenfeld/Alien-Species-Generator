@@ -8,6 +8,8 @@ export const saveAsPDFMixin = {
   },
   methods: {
     /**
+     * Version 2.5.1 docs: https://raw.githack.com/MrRio/jsPDF/master/docs/index.html
+     *
      * Font files generated from: https://peckconsulting.s3.amazonaws.com/fontconverter/fontconverter.html
      * Referencing this tutorial: https://www.devlinpeck.com/tutorials/jspdf-custom-font
      */

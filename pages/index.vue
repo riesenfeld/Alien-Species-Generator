@@ -140,18 +140,26 @@ export default {
       )
       this.clipboardStatus = 1
     },
-    setQueryParams() {
+    setQueryParams(
+      parentingStyleInfo,
+      reproductionInfo,
+      anatomyInfo,
+      dietInfo
+    ) {
       this.$router.replace({
         path: this.$route.path,
         query: {
-          a: this.anatomyInfo?.main.id || -1,
-          aa: this.anatomyInfo?.additions.id || -1,
-          d: this.dietInfo?.main.id || -1,
-          ds: this.dietInfo?.styles.id || -1,
-          da: this.dietInfo?.additions.id || -1,
-          r: this.reproductionInfo?.main.id || -1,
-          ra: this.reproductionInfo?.additions.id || -1,
-          p: this.parentingStyleInfo?.main.id || -1,
+          a: anatomyInfo.main.id,
+          aa: anatomyInfo.additions === false ? -1 : anatomyInfo.additions.id,
+          d: dietInfo.main.id,
+          ds: dietInfo.styles.id,
+          da: dietInfo.additions === false ? -1 : dietInfo.additions.id,
+          r: reproductionInfo.main.id,
+          ra:
+            reproductionInfo.additions === false
+              ? -1
+              : reproductionInfo.additions.id,
+          p: parentingStyleInfo.main.id,
         },
       })
     },
@@ -220,7 +228,12 @@ export default {
       this.anatomyInfo = this.pickRandomAnatomy()
       this.dietInfo = this.pickRandomDiet()
       this.clipboardStatus = 0
-      this.setQueryParams()
+      this.setQueryParams(
+        this.parentingStyleInfo,
+        this.reproductionInfo,
+        this.anatomyInfo,
+        this.dietInfo
+      )
     },
     validateQueryParams() {
       const keys = Object.keys(this.$route.query)
