@@ -19,9 +19,7 @@
       >
       <!-- <v-spacer></v-spacer> -->
       <!-- </span> -->
-      <v-btn class="btn" color="primary" @click="handlePDF"
-        >Save as PDF &nbsp;<v-icon>mdi-file-pdf-box</v-icon></v-btn
-      >
+      <SaveModal @pdf-save-event="handlePDF()"></SaveModal>
       <!-- <v-text-field label="Name this species"></v-text-field> -->
       <!-- </span> -->
 
@@ -42,7 +40,7 @@
       </v-btn> -->
     </v-app-bar>
     <ClientOnly>
-      <v-main>
+      <v-main id="main">
         <v-container v-if="parentingStyleInfo">
           <v-row ref="cards" justify="center" align="center">
             <v-col cols="12" sm="12" md="12" align="center">
@@ -83,11 +81,12 @@
 <script>
 import { saveAsPDFMixin } from '../mixins/saveAsPDFMixin.js'
 import InformationCard from '@/components/InformationCard.vue'
+import SaveModal from '@/components/SaveModal.vue'
 import speciesDataJSON from '@/data/species_data.json'
 
 export default {
   name: 'IndexPage',
-  components: { InformationCard },
+  components: { InformationCard, SaveModal },
   mixins: [saveAsPDFMixin],
   data() {
     return {
@@ -298,14 +297,13 @@ export default {
       this.dietInfo = {
         main: this.speciesData.DIET[params.d],
         additions:
-          params.da > -1
-            ? this.speciesData.ANATOMY_ADDITIONS[params.da]
-            : false,
+          params.da > -1 ? this.speciesData.DIET_ADDITIONS[params.da] : false,
         styles: this.speciesData[params.ds],
       }
       this.clipboardStatus = 0
     },
     handlePDF() {
+      console.log('YES HANDLE PDF')
       this.saveAsPDF([
         this.parentingStyleInfo,
         this.reproductionInfo,
