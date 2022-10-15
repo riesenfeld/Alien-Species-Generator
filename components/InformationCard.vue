@@ -32,10 +32,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @font-face {
-//   font-family: Finlandica;
-//   src: url('@/assets/fonts/Finlandica-Regular.ttf') format('truetype');
-// }
 .info-card {
   width: min(80vw, 760px);
   padding: 10px;

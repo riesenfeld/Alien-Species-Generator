@@ -2,13 +2,10 @@
   <div>
     <v-app-bar fixed app>
       <v-app-bar-title>Alien Species Generator</v-app-bar-title>
-      <!-- <span> -->
       <v-spacer></v-spacer>
       <v-btn color="primary" class="btn" @click="generate"
         >Generate &nbsp;<v-icon>mdi-autorenew</v-icon></v-btn
       >
-      <!-- <span> -->
-      <!-- <v-spacer></v-spacer> -->
       <v-btn
         :color="clipboardStatus < 1 ? 'primary' : 'success'"
         class="btn"
@@ -17,27 +14,7 @@
         {{ clipboardStatusOptions[clipboardStatus] }}
         &nbsp;<v-icon>mdi-link-variant</v-icon></v-btn
       >
-      <!-- <v-spacer></v-spacer> -->
-      <!-- </span> -->
       <SaveModal @pdf-save-event="handlePDF"></SaveModal>
-      <!-- <v-text-field label="Name this species"></v-text-field> -->
-      <!-- </span> -->
-
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn> -->
     </v-app-bar>
     <ClientOnly>
       <v-main id="main">
@@ -52,8 +29,6 @@
                 background-color="#220"
                 :content="reproductionInfo"
               ></InformationCard>
-              <!-- </v-col> -->
-              <!-- <v-col cols="12" sm="6" md="6"> -->
               <InformationCard
                 background-color="#020"
                 :content="anatomyInfo"

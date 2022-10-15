@@ -2,9 +2,6 @@
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template #activator="{ on, attrs }">
-        <!-- <v-btn color="primary" dark v-bind="attrs" v-on="on">
-          Open Dialog
-        </v-btn> -->
         <v-btn class="btn" color="primary" v-bind="attrs" v-on="on"
           >Save as PDF &nbsp;<v-icon>mdi-file-pdf-box</v-icon></v-btn
         >
@@ -19,7 +16,6 @@
             label="Name"
             hint="the name you want to give this species"
           ></v-text-field>
-          <!-- <p>{{ speciesName }}</p> -->
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
