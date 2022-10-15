@@ -15,10 +15,11 @@
         </v-card-title>
         <v-card-text>
           <v-text-field
+            v-model="speciesName"
             label="Name"
             hint="the name you want to give this species"
-            :value="alienName"
           ></v-text-field>
+          <!-- <p>{{ speciesName }}</p> -->
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -38,14 +39,12 @@
 export default {
   data: () => ({
     dialog: false,
-    alienName: '',
+    speciesName: '',
   }),
   methods: {
     handleConfirm() {
+      this.$emit('pdf-save-event', this.speciesName)
       this.dialog = false
-      this.$emit('pdf-save-event', {
-        name: this.alienName,
-      })
     },
   },
 }

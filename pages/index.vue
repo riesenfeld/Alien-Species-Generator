@@ -19,7 +19,7 @@
       >
       <!-- <v-spacer></v-spacer> -->
       <!-- </span> -->
-      <SaveModal @pdf-save-event="handlePDF()"></SaveModal>
+      <SaveModal @pdf-save-event="handlePDF"></SaveModal>
       <!-- <v-text-field label="Name this species"></v-text-field> -->
       <!-- </span> -->
 
@@ -298,13 +298,12 @@ export default {
         main: this.speciesData.DIET[params.d],
         additions:
           params.da > -1 ? this.speciesData.DIET_ADDITIONS[params.da] : false,
-        styles: this.speciesData[params.ds],
+        styles: this.speciesData.DIET_STYLES[params.ds],
       }
       this.clipboardStatus = 0
     },
-    handlePDF() {
-      console.log('YES HANDLE PDF')
-      this.saveAsPDF([
+    handlePDF(speciesName) {
+      this.saveAsPDF(speciesName, [
         this.parentingStyleInfo,
         this.reproductionInfo,
         this.anatomyInfo,
