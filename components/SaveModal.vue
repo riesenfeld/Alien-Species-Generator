@@ -15,6 +15,7 @@
             v-model="speciesName"
             label="Name"
             hint="the name you want to give this species"
+            required
           ></v-text-field>
         </v-card-text>
         <v-card-actions>
@@ -22,7 +23,12 @@
           <v-btn color="blue darken-1" text @click="dialog = false">
             Never mind
           </v-btn>
-          <v-btn color="blue darken-1" text @click="handleConfirm">
+          <v-btn
+            color="blue darken-1"
+            text
+            :disabled="speciesName.trim().length <= 0"
+            @click="handleConfirm"
+          >
             Confirm
           </v-btn>
         </v-card-actions>
