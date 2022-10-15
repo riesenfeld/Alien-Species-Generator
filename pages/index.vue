@@ -14,7 +14,7 @@
         {{ clipboardStatusOptions[clipboardStatus] }}
         &nbsp;<v-icon>mdi-link-variant</v-icon></v-btn
       >
-      <SaveModal @pdf-save-event="handlePDF"></SaveModal>
+      <SaveModal :pdf-saved="pdfSaved" @pdf-save-event="handlePDF"></SaveModal>
     </v-app-bar>
     <ClientOnly>
       <v-main id="main">
@@ -72,6 +72,7 @@ export default {
       dietInfo: false,
       clipboardStatusOptions: ['Copy permalink', 'Copied!'],
       clipboardStatus: 0,
+      pdfSaved: false,
     }
   },
   beforeMount() {
@@ -202,6 +203,7 @@ export default {
       this.anatomyInfo = this.pickRandomAnatomy()
       this.dietInfo = this.pickRandomDiet()
       this.clipboardStatus = 0
+      this.pdfSaved = false
       this.setQueryParams(
         this.parentingStyleInfo,
         this.reproductionInfo,
@@ -284,6 +286,7 @@ export default {
         this.anatomyInfo,
         this.dietInfo,
       ])
+      this.pdfSaved = true
     },
   },
 }

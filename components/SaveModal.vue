@@ -2,8 +2,14 @@
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="600px">
       <template #activator="{ on, attrs }">
-        <v-btn class="btn" color="primary" v-bind="attrs" v-on="on"
-          >Save as PDF &nbsp;<v-icon>mdi-file-pdf-box</v-icon></v-btn
+        <v-btn
+          class="btn"
+          :color="pdfSaved ? 'success' : 'primary'"
+          v-bind="attrs"
+          v-on="on"
+          >{{ pdfSaved ? 'PDF saved!' : 'Save as PDF' }} &nbsp;<v-icon
+            >mdi-file-pdf-box</v-icon
+          ></v-btn
         >
       </template>
       <v-card>
@@ -39,6 +45,12 @@
 
 <script>
 export default {
+  props: {
+    pdfSaved: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data: () => ({
     dialog: false,
     speciesName: '',
