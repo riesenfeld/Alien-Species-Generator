@@ -123,7 +123,8 @@ export const saveAsPDFMixin = {
       const doc = new jsPDF({ unit: 'pt' })
       this.addFont(doc)
       this.drawPDF(doc, speciesName, traits)
-      doc.save('a4.pdf')
+      const fileName = speciesName.replace(/[^a-zA-Z0-9]/g, '')
+      doc.save(fileName)
     },
   },
 }
