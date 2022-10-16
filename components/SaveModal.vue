@@ -4,12 +4,14 @@
       <template #activator="{ on, attrs }">
         <v-btn
           class="btn"
+          :tile="!isNarrow"
+          :rounded="isNarrow"
           :color="pdfSaved ? 'success' : 'primary'"
           v-bind="attrs"
           v-on="on"
-          >{{ pdfSaved ? 'PDF saved!' : 'Save as PDF' }} &nbsp;<v-icon
-            >mdi-file-pdf-box</v-icon
-          ></v-btn
+          >{{
+            isNarrow ? '' : pdfSaved ? 'PDF saved!&nbsp;' : 'Save as PDF&nbsp;'
+          }}<v-icon>mdi-file-pdf-box</v-icon></v-btn
         >
       </template>
       <v-card>
@@ -47,6 +49,10 @@
 export default {
   props: {
     pdfSaved: {
+      type: Boolean,
+      default: false,
+    },
+    isNarrow: {
       type: Boolean,
       default: false,
     },

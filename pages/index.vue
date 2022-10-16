@@ -1,20 +1,32 @@
 <template>
   <div>
-    <v-app-bar fixed app>
+    <v-app-bar ref="appbar" fixed app>
       <v-app-bar-title>Alien Species Generator</v-app-bar-title>
       <v-spacer></v-spacer>
-      <v-btn color="primary" class="btn" @click="generate"
-        >Generate &nbsp;<v-icon>mdi-autorenew</v-icon></v-btn
+      <v-btn
+        color="primary"
+        class="btn"
+        :tile="!isNarrow"
+        :rounded="isNarrow"
+        @click="generate"
+        >{{ isNarrow ? '' : 'Generate &nbsp;'
+        }}<v-icon>mdi-autorenew</v-icon></v-btn
       >
       <v-btn
         :color="clipboardStatus < 1 ? 'primary' : 'success'"
         class="btn"
+        :tile="!isNarrow"
+        :rounded="isNarrow"
         @click="copyLinkToClipboard"
       >
-        {{ clipboardStatusOptions[clipboardStatus] }}
-        &nbsp;<v-icon>mdi-link-variant</v-icon></v-btn
+        {{ isNarrow ? '' : clipboardStatusOptions[clipboardStatus] + '&nbsp;'
+        }}<v-icon>mdi-link-variant</v-icon></v-btn
       >
-      <SaveModal :pdf-saved="pdfSaved" @pdf-save-event="handlePDF"></SaveModal>
+      <SaveModal
+        :is-narrow="isNarrow"
+        :pdf-saved="pdfSaved"
+        @pdf-save-event="handlePDF"
+      ></SaveModal>
     </v-app-bar>
     <ClientOnly>
       <v-main id="main">
@@ -41,11 +53,7 @@
           </v-row>
         </v-container>
         <div v-else id="loading-message">
-          <v-progress-circular
-            indeterminate
-            size="100"
-            width="10"
-          ></v-progress-circular>
+          <v-progress-circular indeterminate size="100"></v-progress-circular>
           <h2>Generating...</h2>
         </div>
       </v-main>
@@ -74,6 +82,11 @@ export default {
       clipboardStatus: 0,
       pdfSaved: false,
     }
+  },
+  computed: {
+    isNarrow() {
+      return this.$vuetify.breakpoint.width < 780
+    },
   },
   beforeMount() {
     if (this.validateQueryParams()) {
@@ -302,7 +315,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-top: 20vh;
 }
 </style>
