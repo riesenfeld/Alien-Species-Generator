@@ -1,32 +1,45 @@
 <template>
   <div>
     <v-app-bar ref="appbar" fixed app>
-      <v-app-bar-title>Alien Species Generator</v-app-bar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        color="primary"
-        class="btn"
-        :tile="!isNarrow"
-        :rounded="isNarrow"
-        @click="generate"
-        >{{ isNarrow ? '' : 'Generate &nbsp;'
-        }}<v-icon>mdi-autorenew</v-icon></v-btn
-      >
-      <v-btn
-        :color="clipboardStatus < 1 ? 'primary' : 'success'"
-        class="btn"
-        :tile="!isNarrow"
-        :rounded="isNarrow"
-        @click="copyLinkToClipboard"
-      >
-        {{ isNarrow ? '' : clipboardStatusOptions[clipboardStatus] + '&nbsp;'
-        }}<v-icon>mdi-link-variant</v-icon></v-btn
-      >
-      <SaveModal
-        :is-narrow="isNarrow"
-        :pdf-saved="pdfSaved"
-        @pdf-save-event="handlePDF"
-      ></SaveModal>
+      <div class="d-flex justify-space-between align-center nav-flex-row">
+        <v-app-bar-title v-if="isNarrow" class="header-title-small"
+          ><div>Alien</div>
+          <div>Species</div>
+          <div>Generator</div></v-app-bar-title
+        >
+        <v-app-bar-title v-else class="header-title-large"
+          >Alien Species Generator</v-app-bar-title
+        >
+        <div class="nav-button-group">
+          <v-btn
+            color="primary"
+            class="btn"
+            :tile="!isNarrow"
+            :rounded="isNarrow"
+            @click="generate"
+            >{{ isNarrow ? '' : 'Generate &nbsp;'
+            }}<v-icon>mdi-autorenew</v-icon></v-btn
+          >
+          <v-btn
+            :color="clipboardStatus < 1 ? 'primary' : 'success'"
+            class="btn"
+            :tile="!isNarrow"
+            :rounded="isNarrow"
+            @click="copyLinkToClipboard"
+          >
+            {{
+              isNarrow
+                ? ''
+                : clipboardStatusOptions[clipboardStatus] + '&nbsp;'
+            }}<v-icon>mdi-link-variant</v-icon></v-btn
+          >
+          <SaveModal
+            :is-narrow="isNarrow"
+            :pdf-saved="pdfSaved"
+            @pdf-save-event="handlePDF"
+          ></SaveModal>
+        </div>
+      </div>
     </v-app-bar>
     <ClientOnly>
       <v-main id="main">
@@ -306,6 +319,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.nav-flex-row {
+  width: 100%;
+}
+.header-title-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.75rem;
+}
 .btn {
   font-size: 0.8rem;
   margin-right: 12px;
