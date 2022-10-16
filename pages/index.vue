@@ -16,6 +16,9 @@
             class="btn"
             :tile="!isNarrow"
             :rounded="isNarrow"
+            :fab="isNarrow"
+            :max-height="isNarrow ? 46 : undefined"
+            :max-width="isNarrow ? 46 : undefined"
             @click="generate"
             >{{ isNarrow ? '' : 'Generate &nbsp;'
             }}<v-icon>mdi-autorenew</v-icon></v-btn
@@ -25,6 +28,9 @@
             class="btn"
             :tile="!isNarrow"
             :rounded="isNarrow"
+            :fab="isNarrow"
+            :max-height="isNarrow ? 46 : undefined"
+            :max-width="isNarrow ? 46 : undefined"
             @click="copyLinkToClipboard"
           >
             {{
