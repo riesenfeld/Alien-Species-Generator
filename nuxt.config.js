@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - alien-species-generator',
-    title: 'alien-species-generator',
+    titleTemplate: '%s | Local Space Patrol',
+    title: 'Alien Species Generator',
     htmlAttrs: {
       lang: 'en',
     },
