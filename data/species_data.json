@@ -102,7 +102,7 @@
     {
       "id": 8,
       "name": "Abiogenesis",
-      "description": "They reproduce through abiogenesis: creating life out of non-living matter. The exact process is arcane and kept secret, but these products are clearly lifeforms and have consciousness. This is similar to but different from a robotic Artificial Intelligence",
+      "description": "They reproduce through abiogenesis: creating life out of non-living matter. The exact process is arcane and kept secret, but these products are clearly lifeforms and have consciousness. This is similar to but different from a robotic Artificial Intelligence.",
       "rarity_class": "EXTRAORDINARY"
     },
     {
@@ -174,13 +174,13 @@
     {
       "id": 5,
       "name": "Avian",
-      "description": "it is at least partially feathered and has wings.",
+      "description": "This species is at least partially feathered and has wings.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
       "name": "Reptilian",
-      "description": "it is cold blooded and is at least partially covered in scales. It might also shed its skin.",
+      "description": "This species is cold blooded and is at least partially covered in scales. It might also shed its skin.",
       "rarity_class": "COMMON"
     },
     {
@@ -236,13 +236,13 @@
     },
     {
       "id": 4,
-      "name": "Wings (do not roll for 6)",
+      "name": "Wings",
       "description": "This alien has wings of some kind and is able to fly or glide.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 5,
-      "name": "Tentacles (do not roll for 2)",
+      "name": "Tentacles",
       "description": "This alien has sensitive and flexible tentacles that can sense, grab or attack other animals.",
       "rarity_class": "UNCOMMON"
     },
@@ -287,7 +287,7 @@
     },
     {
       "id": 3,
-      "name": "Psychic/Energy",
+      "name": "Psychic or Energy",
       "description": "This alien consumes psychic or emotional energy for sustenance.",
       "rarity_class": "EXTRAORDINARY"
     },
@@ -299,7 +299,7 @@
     },
     {
       "id": 5,
-      "name": "Decaying matter",
+      "name": "Decaying Matter",
       "description": "This alien consumes decaying matter such as dead animals or rotted wood.",
       "rarity_class": "UNCOMMON"
     },
@@ -339,115 +339,115 @@
     {
       "id": 0,
       "name": "Ambushing",
-      "description": "Hiding and ambushing. ☆ (4, 9-11)",
+      "description": "Individuals of this species emerge from a hiding place to ambush its prey.",
       "rarity_class": "COMMON"
     },
     {
       "id": 1,
-      "name": "Going solo",
-      "description": "Foraging or hunting on their own.",
+      "name": "Going Solo",
+      "description": "Individuals of this species forage or hunt on their own.",
       "rarity_class": "COMMON"
     },
     {
       "id": 2,
-      "name": "Hunting with Pack",
-      "description": "hunting in packs (4, 10 and 11)",
+      "name": "Hunting With Pack",
+      "description": "Individuals of this species hunt prey in packs.",
       "rarity_class": "COMMON"
     },
     {
       "id": 3,
-      "name": "Grazing with Herd",
-      "description": "grazing in a herd ■ (2, 3, 5, 6 and 9)",
+      "name": "Herd Grazing",
+      "description": "Individuals of this species graze in herds.",
       "rarity_class": "COMMON"
     },
     {
       "id": 4,
       "name": "Cooking",
-      "description": "cooking their food to a certain temperature ■ ☆",
+      "description": "Individuals of this species cook their food to a desired temperature before consuming it.",
       "rarity_class": "RARE"
     },
     {
       "id": 5,
-      "name": "Swallows whole",
-      "description": "swallowing their food whole",
+      "name": "Swallows Whole",
+      "description": "Individuals of this species swallow their food whole.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 6,
       "name": "Chews",
-      "description": "chewing their food",
+      "description": "Individuals of this species chew their food.",
       "rarity_class": "RARE"
     },
     {
       "id": 7,
-      "name": "Sucks nutrition out",
-      "description": "sucking out the nutrients inside an organism. ■ ☆",
+      "name": "Sucks Nutrition Out",
+      "description": "Individuals of this species suck the nutrients out of their food.",
       "rarity_class": "COMMON"
     },
     {
       "id": 8,
-      "name": "Sucks food in",
-      "description": "sucking food into their mouth from a distance with great force. ■",
+      "name": "Sucks Food In",
+      "description": " Individuals of this species suck food into their mouths from a distance with great force.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 9,
-      "name": "Expels acid",
-      "description": "expelling their stomach acids out onto their food to digest it before eating.",
+      "name": "Expels Acid",
+      "description": "Individuals of this species expel their stomach acids out onto their food to digest it before eating.",
       "rarity_class": "COMMON"
     },
     {
       "id": 10,
       "name": "Roots",
-      "description": "putting down a kind of root that transfers nutrients to the alien. ■ ☆",
+      "description": "Individuals of this species put down a kind of root that transfers nutrients to the alien.",
       "rarity_class": "RARE"
     },
     {
       "id": 11,
       "name": "Steals",
-      "description": "stealing food from another creature. This isn't mere desperation, but rather a distinct technique developed during evolution. ■ ☆",
+      "description": "Individuals of this species steal food from other creatures. This isn't mere desperation, but rather a distinct technique developed during evolution.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 12,
       "name": "Injection",
-      "description": "injecting its food with compounds that digest it, paralyze it, poison it, etc. ☆",
+      "description": "Individuals of this species inject their food with compounds that digest it, paralyze it, poison it, etc.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 13,
       "name": "Scavenging",
-      "description": "scavenging: essentially waiting for a predator to finish eating its prey, and then picking up where they left off, eating the parts that others can't. They evolved to gain nutrition from eating decomposing matter and are not affect by diseases from eating it.",
+      "description": "Individuals of this species wait for a predator to finish eating its prey, and then pick up where that predator left off, eating the parts that others can't. They have evolved to gain nutrition from eating decomposing matter and are not affect by diseases from eating it.",
       "rarity_class": "COMMON"
     },
     {
       "id": 14,
       "name": "Gastrolith",
-      "description": "swallowing rocks or similar objects to help break food down in their stomachs.",
+      "description": "Individuals of this species consume rocks or similar objects to help break food down in their stomachs.",
       "rarity_class": "UNCOMMON"
     },
     {
       "id": 15,
       "name": "Tearing, Ripping or Breaking apart",
-      "description": "tearing, ripping or otherwise breaking their food apart.",
+      "description": "Individuals of this species tear, rip or otherwise break their food apart.",
       "rarity_class": "COMMON"
     },
     {
       "id": 16,
-      "name": "Traps/catches",
-      "description": "trapping their food, or otherwise using a sticky body part that specializes in catching food.",
+      "name": "Trapping or catching",
+      "description": "Individuals of this species trap their food with tools, or otherwise use a sticky body part that specializes in catching food.",
       "rarity_class": "COMMON"
     },
     {
       "id": 17,
       "name": "Absorbs",
-      "description": "absorbing nutrients through their skin (or skin-equivalent). Like a kind of osmosis. ■ ☆",
+      "description": "Individuals of this species absorb nutrients through their skin (or skin-equivalent), in a process similar to osmosis.",
       "rarity_class": "EXTRAORDINARY"
     },
     {
       "id": 18,
       "name": "Paralyzes",
-      "description": "paralyzing its prey, or shuts down certain functions and organs through toxins or sounds, etc. ☆",
+      "description": "Individuals of this species paralyze their prey or shut down certain functions and organs through toxins or sounds, etc.",
       "rarity_class": "UNCOMMON"
     }
   ],
@@ -467,13 +467,13 @@
     },
     {
       "id": 2,
-      "name": "Needs food badly",
+      "name": "Needs Food Badly",
       "description": "This animal also requires so much energy that it must eat more than it weighs multiple times a day. This animal also has a fast metabolism.",
       "rarity_class": "RARE"
     },
     {
       "id": 3,
-      "name": "Slow metabolism",
+      "name": "Slow Metabolism",
       "description": "This animal also does not need to eat frequently. It has a slow metabolism, and while it can survive long periods without food, it is also slower or must carefully conserve its energy.",
       "rarity_class": "EXTRAORDINARY"
     }
