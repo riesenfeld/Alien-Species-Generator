@@ -8,19 +8,6 @@
           <div>Generator</div></v-app-bar-title
         >
         <h1 v-else class="header-title-large">Alien Species Generator</h1>
-        <!-- <v-app-bar-title v-if="isNarrow" class="header-title-small"
-          ><div>Alien</div>
-          <div>Species</div>
-          <div>Generator</div></v-app-bar-title
-        >
-        <v-app-bar-title v-else class="header-title-large"
-          >Alien Species Generator</v-app-bar-title
-        > -->
-        <!-- <img
-          src="../static/asg_text_logo.svg"
-          alt="Alien Species Generator"
-          class="header-logo"
-        /> -->
         <div class="nav-button-group">
           <v-btn
             color="primary"
