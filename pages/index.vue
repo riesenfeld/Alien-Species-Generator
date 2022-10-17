@@ -7,9 +7,20 @@
           <div>Species</div>
           <div>Generator</div></v-app-bar-title
         >
+        <h1 v-else class="header-title-large">Alien Species Generator</h1>
+        <!-- <v-app-bar-title v-if="isNarrow" class="header-title-small"
+          ><div>Alien</div>
+          <div>Species</div>
+          <div>Generator</div></v-app-bar-title
+        >
         <v-app-bar-title v-else class="header-title-large"
           >Alien Species Generator</v-app-bar-title
-        >
+        > -->
+        <!-- <img
+          src="../static/asg_text_logo.svg"
+          alt="Alien Species Generator"
+          class="header-logo"
+        /> -->
         <div class="nav-button-group">
           <v-btn
             color="primary"
@@ -328,11 +339,19 @@ export default {
 .nav-flex-row {
   width: 100%;
 }
+.header-logo {
+  color: white;
+  background-color: pink;
+}
 .header-title-small {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 0.75rem;
+}
+.header-title-large {
+  font-size: 1.4rem;
+  font-weight: normal;
 }
 .btn {
   font-size: 0.8rem;
