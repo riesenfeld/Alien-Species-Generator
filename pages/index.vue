@@ -18,9 +18,12 @@
             :max-height="isNarrow ? 46 : undefined"
             :max-width="isNarrow ? 46 : undefined"
             @click="generate"
-            >{{ isNarrow ? '' : 'Generate &nbsp;'
-            }}<v-icon>mdi-autorenew</v-icon></v-btn
           >
+            <span v-if="!isNarrow">
+              Generate&nbsp;<v-icon>mdi-autorenew</v-icon>
+            </span>
+            <span v-else><v-icon>mdi-autorenew</v-icon></span>
+          </v-btn>
           <v-btn
             :color="clipboardStatus < 1 ? 'primary' : 'success'"
             class="btn"
@@ -31,12 +34,13 @@
             :max-width="isNarrow ? 46 : undefined"
             @click="copyLinkToClipboard"
           >
-            {{
-              isNarrow
-                ? ''
-                : clipboardStatusOptions[clipboardStatus] + '&nbsp;'
-            }}<v-icon>mdi-link-variant</v-icon></v-btn
-          >
+            <span v-if="isNarrow"><v-icon>mdi-link-variant</v-icon></span>
+            <span v-else
+              >{{ clipboardStatusOptions[clipboardStatus] }}&nbsp;<v-icon
+                >mdi-link-variant</v-icon
+              ></span
+            >
+          </v-btn>
           <SaveModal
             :is-narrow="isNarrow"
             :pdf-saved="pdfSaved"

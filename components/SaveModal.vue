@@ -11,9 +11,14 @@
         :color="pdfSaved ? 'success' : 'primary'"
         v-bind="attrs"
         v-on="on"
-        >{{ isNarrow ? '' : pdfSaved ? 'PDF saved!&nbsp;' : 'Save as PDF&nbsp;'
-        }}<v-icon>mdi-file-pdf-box</v-icon></v-btn
       >
+        <span v-if="isNarrow"><v-icon>mdi-file-pdf-box</v-icon></span>
+        <span v-else
+          >{{ pdfSaved ? 'PDF saved!' : 'Save as PDF' }}&nbsp;<v-icon
+            >mdi-file-pdf-box</v-icon
+          ></span
+        >
+      </v-btn>
     </template>
     <v-card>
       <v-card-title>
