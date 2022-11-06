@@ -1,7 +1,7 @@
 <template>
   <v-sheet class="info-card" :color="backgroundColor">
     <section>
-      <h2>{{ content.main.name }}</h2>
+      <h2>{{ category }}: {{ content.main.name }}</h2>
       <p>{{ content.main.description }}</p>
     </section>
     <section v-if="content.styles">
@@ -22,6 +22,10 @@ export default {
     backgroundColor: {
       type: String,
       default: 'white',
+    },
+    category: {
+      type: String,
+      default: '',
     },
     content: {
       type: [Object, Boolean],

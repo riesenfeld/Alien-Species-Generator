@@ -57,18 +57,22 @@
               <InformationCard
                 background-color="#200"
                 :content="parentingStyleInfo"
+                category="Parenting Style"
               ></InformationCard>
               <InformationCard
                 background-color="#220"
                 :content="reproductionInfo"
+                category="Reproduction"
               ></InformationCard>
               <InformationCard
                 background-color="#020"
                 :content="anatomyInfo"
+                category="Physiology"
               ></InformationCard>
               <InformationCard
                 background-color="#002"
                 :content="dietInfo"
+                category="Diet"
               ></InformationCard>
             </v-col>
           </v-row>
